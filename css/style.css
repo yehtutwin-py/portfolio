@@ -1,0 +1,31 @@
+/* Navigation bar style */
+.nav-name{
+    font-size:150%;
+    font-family:'Lucida Handwriting',cursive
+}
+/* background color */
+nav, #projects, #practice, #footer{
+    background-color: #F3E3D0;
+}
+nav .nav-link:hover{
+    color: #333333;
+    font-weight: bold;
+}
+.hover-bracket::before{
+  content:"<";
+  opacity:0;
+  margin-right:5px;
+  transition:0.3s;
+}
+.hover-bracket::after{
+  content:">";
+  opacity:0;
+  margin-left:5px;
+  transition:0.3s;
+}
+.hover-bracket:hover::before,
+.hover-bracket:hover::after{
+  opacity:1;
+}
+
+
