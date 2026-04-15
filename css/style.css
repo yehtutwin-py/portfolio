@@ -101,6 +101,7 @@ section{
 /* gradient highlight */
 .highlight{
   background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -136,4 +137,19 @@ section{
 }
 .section-title:hover::after{
   width: 60%;
+}
+/* Certificate */
+.card-img-top {
+  height: 300px;
+  object-fit: contain;  
+  background-color: #f8f9fa; 
+  padding: 10px;
+}
+
+.card {
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
 }
